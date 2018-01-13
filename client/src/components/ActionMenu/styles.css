@@ -1,0 +1,36 @@
+.action-menu {
+  list-style: none;
+  display: flex;
+  margin-bottom: var(--grid-size);
+}
+
+.action-menu__item {
+  margin-right: var(--grid-size);
+}
+
+.action-menu__item:last-child {
+  margin-right: 0;
+}
+
+.action-menu__button {
+  color: var(--dark-grey);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  padding: var(--grid-size-half) 0;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.action-menu__button:hover {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.action-menu__button--selected {
+  border-bottom: 3px solid var(--accent-color);
+  pointer-events: none;
+  color: var(--black);
+  text-decoration: none;
+}

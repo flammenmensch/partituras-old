@@ -1,0 +1,26 @@
+.view {
+  margin: 0 var(--grid-size) var(--grid-size) var(--grid-size);
+  position: relative;
+}
+
+.view__title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: var(--grid-size-half);
+}
+
+.view__subtitle {
+  line-height: 1.25;
+  color: var(--dark-grey);
+}
+
+.view__header {
+  margin-bottom: calc(var(--grid-size) * 2);
+}
+
+.view__body {
+
+}

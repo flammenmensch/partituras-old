@@ -1,0 +1,17 @@
+{
+  "name": "partituras-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Flammenmensch <maleventum@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "async": "^2.6.0",
+    "cheerio": "^1.0.0-rc.2",
+    "mongoose": "^4.13.2",
+    "request": "^2.83.0"
+  },
+  "scripts": {
+    "import": "node import.js"
+  }
+}

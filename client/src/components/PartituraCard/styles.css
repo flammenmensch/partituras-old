@@ -1,0 +1,70 @@
+.partitura-card {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 4px;
+  transition: box-shadow 0.2s linear;
+}
+
+.partitura-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 8px 16px;
+}
+
+.partitura-card__image {
+  width: 150px;
+  height: 200px;
+  background: #e6e6e6;
+  display: block;
+}
+
+.partitura-card__placeholder {
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+
+.partitura-card__placeholder:after {
+  content: url(./resources/music.png);
+  opacity: 0.8;
+  display: block;
+  background: var(--light-grey);
+  width: 48px;
+  height: 48px;
+  padding: var(--grid-size-half);
+  border-radius: 100%;
+  position: absolute;
+  left: calc(75px - 34px);
+  top: calc(70px - 34px);
+}
+
+.partitura-card__info {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.partitura-card__title {
+  color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
+}
+
+.partitura-card__music {
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.partitura-card__genre {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8em;
+}

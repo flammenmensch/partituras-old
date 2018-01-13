@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(4 * var(--grid-size)) 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.hero__header {
+  font-size: 2.5em;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: var(--grid-size);
+}
+
+.hero__description {
+  color: var(--dark-grey);
+  font-size: 0.9em;
+}

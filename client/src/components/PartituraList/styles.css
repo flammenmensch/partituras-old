@@ -1,0 +1,21 @@
+.partitura-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partitura-list-header {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--grid-size);
+}
+
+.partitura-list__item {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
