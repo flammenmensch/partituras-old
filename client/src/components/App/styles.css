@@ -31,6 +31,24 @@
   display: flex;
 }
 
+.nav__item {
+  margin-right: var(--grid-size);
+}
+
+.nav__item:last-child {
+  margin: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Roboto, sans-serif;
+  color: var(--black);
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+}
+
 .main {
   margin: 0 auto;
 }

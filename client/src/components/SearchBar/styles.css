@@ -6,10 +6,13 @@
   width: 100%;
   display: block;
   font-size: 1em;
-  padding: 10px 20px;
-  border: none;
-  border-radius: var(--border-radius);
+  padding: var(--grid-size-half) var(--grid-size);
+  border: 1px solid var(--light-grey);
+  /*border-radius: var(--border-radius);*/
   outline: none;
-  transition: box-shadow 0.25s ease-in;
+  transition: border-color 0.25s ease-in;
 }
 
+.search-form__input:focus {
+  border-color: var(--dark-grey);
+}

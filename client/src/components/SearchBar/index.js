@@ -6,7 +6,7 @@ import './styles.css';
 const SearchBar = (props) => (
   <form autoComplete="off" className="search-form" action="/search" onSubmit={props.onSubmit}>
     <input
-      className="search-form__input shadowed"
+      className="search-form__input"
       defaultValue={props.query}
       type="search"
       name="query"

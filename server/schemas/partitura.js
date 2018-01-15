@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const random = require('mongoose-simple-random');
 
 const LyricsSchema = new mongoose.Schema({
   text: { type: String, default: null }
@@ -20,6 +21,6 @@ const PartituraSchema = new mongoose.Schema({
   scores: { type: ScoresSchema, default: null },
 });
 
-module.exports = {
-  Partitura: PartituraSchema
-};
+PartituraSchema.plugin(random);
+
+module.exports = PartituraSchema;

@@ -4,7 +4,7 @@ import T from 'prop-types';
 import './styles.css';
 
 const PartituraCard = (props) => (
-  <figure className="partitura-card shadowed">
+  <figure className="partitura-card shadowed" title={props.title}>
     {
       props.cover &&
       <img className="partitura-card__image" src={props.cover} alt={props.title}/>

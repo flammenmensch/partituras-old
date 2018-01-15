@@ -13,13 +13,13 @@ const mapStateToProps = (state) => state.home;
 const enhance = compose(
   pure,
   connect(mapStateToProps),
-  withLoading,
-  withError,
   lifecycle({
     componentDidMount() {
       this.props.dispatch(getRandomPartituras());
     }
-  })
+  }),
+  withLoading,
+  withError
 );
 
 export default enhance(HomeView);

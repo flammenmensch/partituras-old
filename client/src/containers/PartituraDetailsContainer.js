@@ -67,7 +67,7 @@ const enhance = compose(
     return {
       actions,
       selectedAction,
-      isFavorite: ownerProps.favorites.indexOf(ownerProps.item._id) > -1,
+      isFavorite: ownerProps.favorites.findIndex((item) => item._id === ownerProps.item._id) > -1,
     };
   }),
   withHandlers({
@@ -76,9 +76,9 @@ const enhance = compose(
     },
     onToggleFavorite: (ownerProps) => (value) => {
       const action = value ?
-        removeFromFavorites(ownerProps.item._id)
+        removeFromFavorites(ownerProps.item)
         :
-        addToFavorites(ownerProps.item._id);
+        addToFavorites(ownerProps.item);
       ownerProps.dispatch(action);
     },
     onAction: (ownerProps) => (action) => {

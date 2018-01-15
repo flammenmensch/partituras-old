@@ -5,14 +5,14 @@ const initialState = {
   favorites: []
 };
 
-export const addToFavorites = (id) => ({
+export const addToFavorites = (item) => ({
   type: ADD_TO_FAVORITES,
-  payload: id
+  payload: item
 });
 
-export const removeFromFavorites = (id) => ({
+export const removeFromFavorites = (item) => ({
   type: REMOVE_FROM_FAVORITES,
-  payload: id
+  payload: item
 });
 
 export default (state=initialState, action) => {
@@ -25,7 +25,7 @@ export default (state=initialState, action) => {
     case REMOVE_FROM_FAVORITES:
       return {
         ...state,
-        favorites: state.favorites.filter((id) => id !== action.payload)
+        favorites: state.favorites.filter((item) => item._id !== action.payload._id)
       };
     default:
       return state;

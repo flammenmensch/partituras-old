@@ -12,8 +12,8 @@ const api = (endpoint, config={}) =>
     }))
     .map((response) => response.data);
 
-export const getRandomPartituras = () =>
-  api('random');
+export const getRandomPartituras = (limit=10) =>
+  api('random', { params: { limit }});
 
 export const searchPartituras = (query='') =>
   api('search', { params: { q: query } });
